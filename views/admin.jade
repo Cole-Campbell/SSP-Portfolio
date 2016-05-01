@@ -1,0 +1,14 @@
+extends adminLayout
+
+block content
+  #main
+    .jumbotron
+      .container
+        h2 Cole Campbell
+      
+    .container
+      h1= title
+      form(action="/create", method="post")
+        input(type="text", id="name", name="name" placeholder="Title")
+        input(type="text", id="content", name="Content" placeholder="Write some content here") 
+        button(type="submit") Submit

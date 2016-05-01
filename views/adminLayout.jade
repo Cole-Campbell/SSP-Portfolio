@@ -1,0 +1,21 @@
+html
+    head
+        //Bootstrap CSS and JS called. Make sure JS is called before CSS or JS won't initialize
+        title Secrets Database
+        script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+        script(src='/javascripts/jquery-1.11.3.min.js')
+        script(src='/javascripts/navigation.js')
+        link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+        link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
+        link(rel='stylesheet', href='/stylesheets/style.css') 
+        
+     body
+      #nav.slide
+        a.i.fa.fa-close.fa-2x.close(href="javascript:void(0)", onclick="closeNav()")
+        a(href="#") Home
+        a(href="#") Portfolio
+        a(href="#") About
+      span.i.fa.fa-bars.fa-2x( onclick="openNav()")
+      
+    block content
